@@ -1,89 +1,76 @@
-Smart Glove for Speech Impaired Individuals
+Smart Glove for PWD (Persons with Disabilities)
 
 Overview
 
-The Smart Glove is an assistive technology device designed to help individuals with speech impairments communicate effectively. By detecting hand gestures using an MPU6050 accelerometer and gyroscope, the glove translates sign language into text and converts it into speech through a mobile application. The application connects to the glove via Bluetooth, ensuring seamless communication for users who rely on sign language.
+The Smart Glove project is designed to assist individuals with disabilities (PWD) in communicating effectively. The glove utilizes an MPU6050 accelerometer and gyroscope sensor to detect specific gestures, which are then converted into text and transmitted via Bluetooth to a companion mobile application. The app further converts the text into speech, enabling real-time communication with those who do not understand sign language.
 
 Features
 
-Gesture Recognition: Uses MPU6050 accelerometer and gyroscope to detect hand movements.
+Gesture Recognition: Detects predefined hand movements using MPU6050 sensor.
 
-Bluetooth Connectivity: Wirelessly transmits data from the glove to the mobile application.
+Bluetooth Connectivity: Communicates with a mobile application via Bluetooth module.
 
-Text-to-Speech Conversion: Converts recognized gestures into text, which is then spoken aloud via the app.
+Text-to-Speech Conversion: The mobile application converts detected gestures into speech.
 
-User-Friendly Interface: Simple and intuitive mobile application for easy communication.
+Portable and Lightweight: Designed for ease of use and comfort.
 
-Portable and Wearable: Designed for everyday use with lightweight and flexible materials.
+Real-Time Communication: Helps users interact with non-sign language speakers effectively.
 
-Hardware Components
+Hardware Components Used
 
-Arduino Nano – Microcontroller for processing sensor data.
+Arduino Nano – Microcontroller for processing input from sensors.
 
-MPU6050 Accelerometer & Gyroscope – Motion detection and gesture recognition.
+MPU6050 – Accelerometer and gyroscope for gesture detection.
 
-Bluetooth Module (HC-05/HC-06/ESP32) – Wireless communication between the glove and mobile application.
+HC-05 Bluetooth Module – Enables wireless communication between glove and mobile app.
 
-DF Mini Player – Audio playback for speech output.
+DF Mini Player – Handles audio output functionality.
 
-Micro SD Card – Stores pre-recorded speech files.
+Micro SD Card – Stores pre-recorded audio files.
 
-IR Sensors (10x) – Additional gesture tracking support.
+10 IR Sensors – Additional sensor inputs for gesture detection.
 
-Small Speaker – Outputs synthesized speech.
+ESP32 – Supports gesture recognition and wireless communication.
 
-Zero PCB – Circuit mounting for compact design.
+Small Speaker – Outputs voice feedback.
 
-Rechargeable Batteries & Charging Circuit – Power source for portable usage.
+Zero PCB – Circuit board for component integration.
 
-Glove – Wearable material for sensor attachment.
+Audio Jack – Connects to external audio devices.
 
-Jumper Wires & Double-Sided Tape – Connections and secure sensor placement.
+Accelerometer – Enhances motion tracking accuracy.
+
+Rechargeable Cells with Holder & Charging Circuit – Provides power supply.
+
+Glove – Worn by the user to detect gestures.
+
+Double-Sided Tape & Jumper Wires – Assembly and wiring components.
 
 How It Works
 
-The user wears the smart glove and makes predefined hand gestures.
+The PWD wears the glove and performs a gesture.
 
 The MPU6050 sensor detects the movement and sends data to the Arduino Nano.
 
-The Arduino processes the data and transmits it via Bluetooth to the mobile application.
+The Arduino processes the data and transmits it via the Bluetooth module (HC-05).
 
-The mobile application maps the received data to predefined text phrases.
+The mobile application receives the data, converts it into text, and then into speech.
 
-The app converts the text to speech, allowing others to understand what the user is communicating.
-
-Installation & Usage
-
-Glove Setup:
-
-Assemble the hardware components as per the circuit diagram.
-
-Upload the Arduino code to the Arduino Nano.
-
-Ensure the Bluetooth module is properly paired with the mobile device.
-
-Mobile Application:
-
-Install the smart glove application on your Android device.
-
-Pair the application with the Bluetooth module.
-
-Start making gestures, and the application will convert them into speech.
+The audio output is played through the speaker, enabling real-time communication.
 
 Future Enhancements
 
-Integration with AI-based gesture recognition for improved accuracy.
+AI-based Gesture Recognition: Implement machine learning for adaptive gesture detection.
 
-Expansion of supported languages for broader usability.
+Multi-Language Support: Expand speech output to support multiple languages.
 
-Development of a more compact and ergonomic design.
+Cloud Integration: Enable online storage and analytics for improved performance.
 
-Contributors
+Customizable Gestures: Allow users to define and store their own gesture-speech mappings.
 
-Sahil Shaikh - Developer & Researcher
+Longer Battery Life: Optimize power consumption for extended usage.
 
-License
+Conclusion
 
-This project is open-source and available for modification and enhancement. Feel free to contribute and improve accessibility for those in need.
+This Smart Glove project bridges the communication gap for PWD by converting gestures into speech, enhancing accessibility, and promoting inclusivity. Future developments aim to improve recognition accuracy and expand language support, making it a more powerful assistive tool.
 
-![image](https://github.com/user-attachments/assets/fb28ed60-63a9-4b7b-b344-5acf4611ddcc)
