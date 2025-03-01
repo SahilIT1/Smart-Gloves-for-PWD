@@ -48,3 +48,8 @@ The Smart Glove project is designed to assist individuals with disabilities (PWD
 ## Conclusion
 
 This **Smart Glove project** bridges the communication gap for PWD by converting gestures into speech, enhancing accessibility, and promoting inclusivity. Future developments aim to improve recognition accuracy and expand language support, making it a more powerful assistive tool.
+
+
+![image](https://github.com/user-attachments/assets/c3c2aca6-b37a-410f-8bb6-b8d619b1f522)
+![image](https://github.com/user-attachments/assets/8eb66a57-6711-4e54-822b-61de85cf5f50)
+
